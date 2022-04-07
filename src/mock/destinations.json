@@ -1,0 +1,49 @@
+{
+  "countries": [
+    {
+      "country":"Chile",
+      "url": "https://blogmaladeviagem.com.br/wp-content/uploads/2017/07/deserto-atacama.jpg",
+      "title": "Chilean views"
+
+    },
+    {
+      "country":"Peru",
+      "url": "https://www.passagenspromo.com.br/blog/wp-content/uploads/2020/09/turismo-no-peru-740x415.jpg",
+      "title": "Peruvian views"
+
+    },
+    {
+      "country":"Bolivia",
+      "url": "https://positivoturismo.com.br/wp-content/uploads/2019/12/por-que-viajar-para-a-bolivia.jpg",
+      "title": "Bolivian views"
+      
+    },
+    {
+      "country":"Argentina",
+      "url": "https://www.segurospromo.com.br/blog/wp-content/uploads/2019/11/turismo-na-argentina-740x360.jpg",
+      "title":"Argentina views"
+      
+    },
+    {
+      "country":"Mexico",
+      "url": "https://media.iatiseguros.pt/wp-content/uploads/sites/2/2018/11/Mexico-Chichen-Itza.jpg",
+      "title": "Mexican views"
+    },
+    {
+      "country":"Uruguai",
+      "url": "https://files.aredacao.com.br/upload/content/uruguai-registra-recorde-de-turistas-em-2-17-com-4-2-milhoes-de-visitantes.jpg",
+      "title": "Uruguayan views"
+    },
+    {
+      "country":"Canada",
+      "url": "https://etacanadavisa.com.br/main/wp-content/uploads/2017/10/1508972438_image1.jpeg",
+      "title": "Canadian views"
+    },
+    {
+      "country":"España",
+      "url": "https://www.queroviajarmais.com/wp-content/webp-express/webp-images/uploads/2020/08/ibiza.jpg.webp",
+      "title": "Spanian views"
+    }
+
+  ]
+}
