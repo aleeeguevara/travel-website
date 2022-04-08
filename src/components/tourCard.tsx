@@ -9,7 +9,7 @@ export type Props = {
 
 const TourCard: React.FC<Props> = ({ title, img, children }) => {
   return (
-   <Grid item xs={3}>
+   <Grid item xs={3} style={{ minWidth:'200px'}}>
       <Paper elevation={3}>
         <ImageCard src={img} alt={`${title} tour`} />
         {children}
@@ -21,7 +21,6 @@ const TourCard: React.FC<Props> = ({ title, img, children }) => {
 export const ImageCard = styled.img`
   width: 100%;
   height: 6rem;
-
 `;
 
 export default TourCard;

@@ -4,13 +4,13 @@ import { styled, alpha } from '@mui/material/styles';
 import AppBar from '@mui/material/AppBar';
 import Box from '@mui/material/Box';
 import Toolbar from '@mui/material/Toolbar';
-import IconButton from '@mui/material/IconButton';
 import Typography from '@mui/material/Typography';
 import InputBase from '@mui/material/InputBase';
-import MenuIcon from '@mui/icons-material/Menu';
 import SearchIcon from '@mui/icons-material/Search';
 import { Button } from '@mui/material';
 import { LightModeOutlined, LightMode} from '@mui/icons-material';
+import { Theme } from '@mui/system';
+import { Link } from 'react-router-dom';
 
 
 const Search = styled('div')(({ theme }) => ({
@@ -58,29 +58,24 @@ const StyledInputBase = styled(InputBase)(({ theme }) => ({
 type PropsButton= {
   turnDarkMode: () => void;
   themeOption: PaletteMode;
+  theme: Theme;
 }
-export default function NavBar({ turnDarkMode, themeOption }: PropsButton) {
+export default function NavBar({ turnDarkMode, themeOption, theme }: PropsButton) {
   return (
     <Box sx={{ flexGrow: 1 }}>
-      <AppBar position="static" color="inherit">
-        <Toolbar>
-          <IconButton
-            size="large"
-            edge="start"
-            color="inherit"
-            aria-label="open drawer"
-            sx={{ mr: 2 }}
-          >
-            <MenuIcon />
-          </IconButton>
-          <Typography
-            variant="h6"
-            noWrap
-            component="div"
-            sx={{ flexGrow: 1, display: { xs: 'none', sm: 'block' } }}
-          >
-            Travel Destinations
-          </Typography>
+      <AppBar position="static" sx={{ background: theme.palette.primary.dark }}>
+        <Toolbar style={{ display: 'grid', grid: '100% / 70% 10% 20%' }}>
+          <Link to='/' style= {{textDecoration: 'none', color: 'inherit'}}>
+            <Typography
+              variant="h6"
+              noWrap
+              component="div"
+              sx={{ flexGrow: 1, display: { xs: 'none', sm: 'block' } }}
+              >
+              Travel Destinations
+            </Typography>
+          </Link>
+          
           <Button onClick={() => turnDarkMode()}>
             {themeOption === 'light' ? (
               <LightMode color="warning" />

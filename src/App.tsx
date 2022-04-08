@@ -1,18 +1,12 @@
-import { Box, ThemeProvider, Container, PaletteMode } from '@mui/material';
+import { ThemeProvider, PaletteMode, GlobalStyles } from '@mui/material';
 import React, { useState } from 'react';
 import './App.css';
-import { Cards } from './components/cards';
 import { LightTheme } from './Themes/lightTheme';
-import NavBar from './components/appBar';
 import { DarkTheme } from './Themes/darkTheme';
-// type Country = {
-//   country: string,
-//   url: string,
-//   title: string,
-// }
-// type Destinations = {
-//   countries: Country[];
-// }
+import Home from './pages/Home';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import { DestinationTravel } from './pages/destination-travel';
+import NavBar from './components/appBar';
 
 function App() {
   const [themeActual, setThemeActual] = useState(LightTheme);
@@ -28,14 +22,16 @@ function App() {
 
   return (
     <ThemeProvider theme={themeActual}>
-      <div>
-        <NavBar turnDarkMode={turnDarkMode} themeOption={themeOption} />
-        <Container>
-          <Box margin={5}>
-            <Cards />
-          </Box>
-        </Container>  
-      </div>  
+      <GlobalStyles styles={{
+        body: {backgroundColor: themeOption === 'light' ? '#f1f1f1' : '#222222' }
+      }} />
+      <BrowserRouter>
+        <NavBar turnDarkMode={turnDarkMode} themeOption={themeOption} theme={themeActual} />
+        <Routes>
+          <Route path='/' element={<Home />} />
+          <Route  path='/:id' element={<DestinationTravel />}/>
+        </Routes>
+      </BrowserRouter>
     </ThemeProvider>
   );
 }
