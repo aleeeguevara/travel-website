@@ -3,46 +3,78 @@
     {
       "country":"Chile",
       "url": "https://blogmaladeviagem.com.br/wp-content/uploads/2017/07/deserto-atacama.jpg",
-      "title": "Chilean views"
+      "title": "Chilean views",
+      "time": "5 hours",
+      "starts": 5,
+      "reviews": 3632,
+      "price": "USD $656"
 
     },
     {
       "country":"Peru",
       "url": "https://www.passagenspromo.com.br/blog/wp-content/uploads/2020/09/turismo-no-peru-740x415.jpg",
-      "title": "Peruvian views"
+      "title": "Peruvian views",
+      "time": "8 hours",
+      "starts": 4,
+      "reviews": 2242,
+      "price": "USD $320"
 
     },
     {
       "country":"Bolivia",
       "url": "https://positivoturismo.com.br/wp-content/uploads/2019/12/por-que-viajar-para-a-bolivia.jpg",
-      "title": "Bolivian views"
+      "title": "Bolivian views",
+      "time": "3 hours",
+      "starts": 3,
+      "reviews": 5323,
+      "price": "USD $340"
       
     },
     {
       "country":"Argentina",
       "url": "https://www.segurospromo.com.br/blog/wp-content/uploads/2019/11/turismo-na-argentina-740x360.jpg",
-      "title":"Argentina views"
+      "title":"Argentina views",
+      "time": "2 hours",
+      "starts": 4,
+      "reviews": 2321,
+      "price": "USD $540"
       
     },
     {
       "country":"Mexico",
       "url": "https://media.iatiseguros.pt/wp-content/uploads/sites/2/2018/11/Mexico-Chichen-Itza.jpg",
-      "title": "Mexican views"
+      "title": "Mexican views",
+      "time": "7 hours",
+      "starts": 4,
+      "reviews": 5232,
+      "price": "USD $540"
     },
     {
       "country":"Uruguai",
       "url": "https://files.aredacao.com.br/upload/content/uruguai-registra-recorde-de-turistas-em-2-17-com-4-2-milhoes-de-visitantes.jpg",
-      "title": "Uruguayan views"
+      "title": "Uruguayan views",
+      "time": "3 hours",
+      "starts": 3,
+      "reviews": 3444,
+      "price": "USD $450"
     },
     {
       "country":"Canada",
       "url": "https://etacanadavisa.com.br/main/wp-content/uploads/2017/10/1508972438_image1.jpeg",
-      "title": "Canadian views"
+      "title": "Canadian views",
+      "time": "10 hours",
+      "starts": 4,
+      "reviews": 767,
+      "price": "USD $220"
     },
     {
       "country":"España",
       "url": "https://www.queroviajarmais.com/wp-content/webp-express/webp-images/uploads/2020/08/ibiza.jpg.webp",
-      "title": "Spanian views"
+      "title": "Spanian views",
+      "time": "15 hours",
+      "starts": 4,
+      "reviews": 544,
+      "price": "USD $870"
     }
 
   ]
